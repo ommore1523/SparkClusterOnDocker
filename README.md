@@ -1,0 +1,1 @@
+docker exec --user root -it spark-master spark-submit --master spark://spark-master:7077   --conf spark.jars.ivy=/tmp --conf spark.eventLog.enabled=true --conf spark.eventLog.dir=/tmp/spark-events  --conf spark.hadoop.fs.defaultFS=file:///   /opt/spark-apps/wordcount.py   /opt/spark-apps/input.txt
